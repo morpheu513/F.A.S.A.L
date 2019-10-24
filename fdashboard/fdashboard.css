@@ -19,6 +19,7 @@ body{
   	background-color: black;
   	position: sticky;
   	top: 2px;
+	z-index:1;
 }
 
 #navbar a {
