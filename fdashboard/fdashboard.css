@@ -18,7 +18,8 @@ body{
   	overflow: hidden;
   	background-color: black;
   	position: sticky;
-  	top: 2px;
+	  top: 0px;
+	  z-index: 1;
 }
 
 #navbar a {
@@ -45,6 +46,7 @@ body{
 .content {
 	padding: 16px;
 	text-align: center;
+	z-index: 0;
 	
 }
 
@@ -170,4 +172,3 @@ fieldset {
 	-webkit-backdrop-filter: blur(10px);
   	backdrop-filter: blur(10px); 
 }
-			
