@@ -64,7 +64,7 @@ body{
   top: 0;
   left: 0;
   background-color: white;
-  background-image: linear-gradient(grey,white);
+  background-image: linear-gradient(steelblue,white);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
