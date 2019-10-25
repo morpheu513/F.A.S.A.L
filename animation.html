@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 500px;
+  height: 150px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  animation-direction:alternate-reverse;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: cubic-bezier(0,0,1,1);}
+#div2 {-webkit-animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+#div3 {-webkit-animation-timing-function: cubic-bezier(0.42,0,1,1);}
+#div4 {-webkit-animation-timing-function: cubic-bezier(0,0,0.58,1);}
+#div5 {-webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,1);}
+
+#div1 {animation-timing-function: cubic-bezier(0,0,1,1);}
+#div2 {animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+#div3 {animation-timing-function: cubic-bezier(0.42,0,1,1);}
+#div4 {animation-timing-function: cubic-bezier(0,0,0.58,1);}
+#div5 {animation-timing-function: cubic-bezier(0.42,0,0.58,1);}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-timing-function property is not supported in Internet Explorer 9 and earlier versions.</p>
+<div id="div1">
+        <img src="two.jpg" alt="AMOGH R K" style="width:100%">
+        <h1>AMOGH RK </h1>
+        <p class="title">CEO & Founder,MANDI KARNATKA</p>
+        <p>FASAL University</p>
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+        </div>
+    
+
+
+
+
+
+
+
+
+
+</div>
+<div id="div2">
+        <img src="two.jpg" alt="AMOGH R K" style="width:100%">
+        <h1>AMOGH RK </h1>
+        <p class="title">CEO & Founder,MANDI KARNATKA</p>
+        <p>FASAL University</p>
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+
+</body>
+</html>
