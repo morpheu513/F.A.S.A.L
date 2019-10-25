@@ -1,8 +1,9 @@
 body{
-  margin: 0;
-  background-image: url("produce.jpg"); ;
+  margin: 0;  
+  background-image: url("produce.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .heading{
   background-color: forestgreen;
@@ -13,13 +14,16 @@ body{
   font-size: 35px;
   padding: 2px;
   color: white;
+  border-radius: 10px;
 }
+
 #navbar {
 overflow: hidden;
 background-color: black;
 position: sticky;
 top: 0px;
 z-index: 1;
+border-radius: 10px;
 }
 
 #navbar a {
@@ -40,8 +44,9 @@ color: black;
 }
 
 #navbar a.active {
-background-color: darkgreen;
+/*background-color: darkgreen;*/
 color: white;
+text-decoration: underline;
 }
 
 .content {
@@ -152,6 +157,18 @@ padding-top: 30px;
 list-style-type: none;
 }
 
+.table-head
+{
+  margin-right: auto;
+  margin-left: auto;
+  width: 25%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 20px;
+ 
+}
 .table
 {
   width: 60%;
@@ -170,6 +187,20 @@ list-style-type: none;
   border: 1px solid black ;
   color: white;
 }
+#table-box
+{
+  color: #1b1b1b;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+#table-button
+{
+  color: black;
+}
+#table-radio-button
+{
+  color: black;
+}
 .button{
 text-align: center;
 border-radius: 15px;
@@ -181,14 +212,50 @@ padding:15px 20px;
 border-radius:25px;
 margin: 0px auto;
 }
-.cont{
-display: 
-}
+
 .footer {
-padding: 20px;
+padding: 15px;
 text-align: center;
 background: darkslategrey;
 color: white;
 position: sticky;
 margin-top: 13%;
+}
+
+.fa {
+  border-radius: 25%;
+  padding: 8px;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 25px;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }

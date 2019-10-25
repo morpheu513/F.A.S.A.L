@@ -23,12 +23,15 @@ function addRow() {
   
         button.setAttribute('type', 'button');
         button.setAttribute('value', 'Submit');
+        button.setAttribute('id','table-button');
         radio1.setAttribute('type','radio');
         radio1.setAttribute('value','yes');
         radio1.setAttribute('name','rbutton');
+        radio1.setAttribute('id','table-radio-button');
         radio2.setAttribute('type','radio');
         radio2.setAttribute('value','no');
-        radio2.setAttribute('name','rbutton');  
+        radio2.setAttribute('name','rbutton');
+        radio2.setAttribute('id','table-radio-button');  
         
         button.setAttribute('onclick', 'submitreq(this)');
         
@@ -45,7 +48,7 @@ function addRow() {
         var ele = document.createElement('input');
         ele.setAttribute('type', 'text');
         ele.setAttribute('value', '');
-  
+        ele.setAttribute('id','table-box');
         td.appendChild(ele);
     }
   }
