@@ -3,9 +3,13 @@
     <head>
         <title>BUYER DASHBOARD</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--required CDN's-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- footer icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <link href="buyerhome.css" rel="stylesheet" type="text/css">
     </head>
     <body > 
@@ -13,7 +17,7 @@
         <script src="buyerhome2.js"></script>
         <div class="heading">
             <h1>FASAL</h1>
-        </div>
+        </div>      
         <div id="navbar">
                 <a class="active" href="buyerhome.html">Home</a>
                 <a href="javascript:void(0)">Request Crop</a>
@@ -25,16 +29,18 @@
             <h2>Profile Details</h2>
             <div class="circle" ></div>
                 <ul>
-                   <li><b>Name:</b> Chirag Kashyap S</li>
-                    <li><b>Email:</b> chiragkashyap15 @gmail.com</li>
-                    <li><b>Address:</b> A7-104 ELITA</li>
+                   <li><b>Name:</b> Ram Mohan Rao</li>
+                    <li><b>Email:</b> hello@gmail.com</li>
+                    <li><b>Address:</b> Amritsar, Punjab</li>
                     <li><b>Phone No:</b> 9987654324</li>
                 </ul>
         </div>
         <div id="main">
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;    
+            </span>
+            
         </div>
-        <h1 style="color: black; text-align: center;"> Recieved Crop Details</h1>
+        <h1 class ="table-head "> Recieved Crop Details</h1>
         <div class="cont">
             <table class="table " id="reqtable">
                 <thead>
@@ -64,18 +70,14 @@
                       <tr>
                         <td width="400" height="10">+91 9876543210</td>
                         <td width="400" height="10"><u>FAQ's</u></td>
-                        <td width="400" height="10"><u>facebook</u></td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a></u></td>
                       </tr>
                       <tr>
                         <td width="400" height="10">+91 9893634698</td>
                         <td width="400" height="10"></td>
-                        <td width="400" height="10"><u>twitter</u></td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-google"></a><a href="#" class="fa fa-linkedin"></a></u></td>
                       </tr>
                 </table>
-            <br>
-        </div>      
+        </div>     
     </body>
 </html>
-
-
-
