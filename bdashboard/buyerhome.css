@@ -3,7 +3,6 @@ body{
   background-image: url("produce.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 .heading{
   background-color: forestgreen;
