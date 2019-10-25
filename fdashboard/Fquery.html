@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FARMER QUERY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="fquery.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="heading">
+		<h1>FASAL</h1>
+	</div>
+	<div id="navbar">
+  		<a href="fdashboard.html">Home</a>
+  		<a href="javascript:void(0)">Add Crop</a>
+  		<a href="javascript:void(0)">Crop Details</a>
+  		<a href="javascript:void(0)">Buyer Details</a>
+  		<a class="active" href="Fquery.html">Query</a>
+  		<a href="javascript:void(0)">Signed In</a>
+	</div>
+	<div class="content">
+		<form>
+			<fieldset>
+				<legend><b><u><big><big>Farmer's Complaints</big></big></u></b></legend>
+				<table>
+					<tr>
+						<td  height="50">Complain ID :</td>
+						<td  height="50"><input type="text" name="Complain ID" value=""></td>
+					</tr>
+					<tr>
+						<td  height="50">Complain :</td>
+						<td  height="50">
+							<select required>
+			  					<option value="fertility">Low soil fertility</option>
+			  					<option value="moisture">Low moisture content</option>
+			  					<option value="insect">Emergence of insects</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td  height="50">Others :</td>
+						<td  height="50"><input type="text" name="Others"></td>
+					</tr>
+				</table>
+				<div>
+                    <input type="submit" class="button" value="Submit">
+                </div>
+			</fieldset>
+		</form>
+	</div>
+	<br><br><br>
+		<div class="footer">
+			<table align="center">
+				<tr>
+					<td width="400" height="30"><u><b>Contact Us</b></u></td>
+					<td width="400" height="30"><u><b>About Us</b></u></td>
+					<td width="400" height="30"><b>Share & Subscribe</b></td>
+				</tr>
+				<tr>
+					<td width="400" height="10">+91 9876543210</td>
+					<td width="400" height="10"><u>FAQ's</u></td>
+					<td width="350" height="40"><u><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a></u></td>
+				</tr>
+				<tr>
+					<td width="400" height="10">+91 9893634698</td>
+					<td width="400" height="10"></td>
+					<td width="350" height="40"><u><a href="#" class="fa fa-google"></a><a href="#" class="fa fa-linkedin"></a></u></td>
+				</tr>
+			</table>
+		</div>
+</body>
+</html>
