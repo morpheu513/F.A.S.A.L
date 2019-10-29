@@ -7,5 +7,8 @@ $(document).ready(function () {
     var modal = $(this)
     /*modal.find('.modal-title').text('N ' + crop_type)*/
     modal.find('#crop-type').val(crop_type)
+    modal.find('#crop-name').val('')
+    modal.find('#quantity').val('')
+    modal.find('#crop-planted-date').val('')
   })
 })
