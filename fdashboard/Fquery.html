@@ -23,37 +23,33 @@
 	</div>
 	<div class="content">
 		<form>
-			<fieldset>
-				<legend><b><u><big><big>Farmer's Complaints</big></big></u></b></legend>
-				<table>
-					<tr>
-						<td height="50">Email ID :</td>
-						<td height="50"><input type="Email" name="Email"></td>
-					</tr>
-					<tr>
-						<td  height="50">Complain ID :</td>
-						<td  height="50"><input type="text" name="Complain ID" value=""></td>
-					</tr>
-					<tr>
-						<td  height="50">Complain :</td>
-						<td  height="50">
-							<select required>
-			  					<option value="fertility">Low soil fertility</option>
-			  					<option value="moisture">Low moisture content</option>
-			  					<option value="insect">Emergence of insects</option>
-							</select>
-						</td>
-					</tr>
-
-					<tr>
-						<td  height="50">Others :</td>
-						<td  height="50"><input type="text" name="Others"></td>
-					</tr>
-				</table>
-				<div>
-                    <input type="submit" class="button" value="Submit">
-                </div>
-			</fieldset>
+		  <input id="input-1" type="text" placeholder="COMP123" required autofocus />
+			  <label for="input-1">
+			    <span class="label-text">Complain ID</span>
+			    <span class="nav-dot"></span>
+			    <div class="signup-button-trigger">Start</div>
+			  </label>
+		  <input id="input-2" type="email" placeholder="email@address.com" required />
+			  <label for="input-2">
+			    <span class="label-text">Email</span>
+			    <span class="nav-dot"></span>
+			  </label>
+		  <select id="input-3" placeholder="inability to grow crops" required>
+		  	<option>Low moisture retention</option>
+		  	<option>Low fertility</option>
+			<option>Increase in insects</option>		  
+		  </select>
+			  <label for="input-3">
+			    <span class="label-text">Complain</span>
+			    <span class="nav-dot"></span>
+			  </label>
+		  <input id="input-4" type="text" placeholder="other"/>
+			  <label for="input-4">
+			    <span class="label-text">Others</span>
+			    <span class="nav-dot"></span>
+			  </label>
+		  <button type="submit">Register</button>
+		  <div class="signup-button">Start</div>
 		</form>
 	</div>
 	<br><br><br>
