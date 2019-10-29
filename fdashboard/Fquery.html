@@ -22,7 +22,7 @@
   		<a href="javascript:void(0)">Signed In</a>
 	</div>
 	<div class="content">
-		<form>
+		<form onsubmit="return results();">
 		  <input id="input-1" type="text" placeholder="COMP123" required autofocus />
 			  <label for="input-1">
 			    <span class="label-text">Complain ID</span>
@@ -48,7 +48,7 @@
 			    <span class="label-text">Others</span>
 			    <span class="nav-dot"></span>
 			  </label>
-		  <button type="submit">Register</button>
+		  <button type="submit" value="submit">Submit</button>
 		  <div class="signup-button">Start</div>
 		</form>
 	</div>
@@ -72,5 +72,6 @@
 				</tr>
 			</table>
 		</div>
+	<script type="text/javascript" src="fquery.js"></script>
 </body>
 </html>
