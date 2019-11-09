@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BUYER QUERY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--required CDN's-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- footer icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="bquery.css" rel="stylesheet" type="text/css">
+    </head>
+    <body > 
+        <div class="heading">
+            <h1>FASAL</h1>
+        </div>      
+        <div id="navbar">
+                <a href="E:\WebTech Project\buyer\buyerhome.html">Home</a>
+                <a href="E:\WebTech Project\requestcrop\requestcrop.html">Request Crop</a>
+                <a class="active" href="E:\WebTech Project\Bquery\bquery.html">Query</a>
+                <a href="E:\WebTech Project\main home\mainhome.html">Sign Out</a>
+        </div>
+        <div class="content">
+            <form onsubmit="return results();">
+              <input id="input-1" type="text" placeholder="COMP123" required autofocus />
+                  <label for="input-1">
+                    <span class="label-text">Complain ID</span>
+                    <span class="nav-dot"></span>
+                    <div class="signup-button-trigger">Start</div>
+                  </label>
+              <input id="input-2" type="email" placeholder="email@address.com" required />
+                  <label for="input-2">
+                    <span class="label-text">Email</span>
+                    <span class="nav-dot"></span>
+                  </label>
+              <select id="input-3" required>
+                <option>Delivery Delay</option>
+                <option>Product Quality</option>
+                <option>Product Quantity</option>          
+              </select>
+                  <label for="input-3">
+                    <span class="label-text">Complain</span>
+                    <span class="nav-dot"></span>
+                  </label>
+              <input id="input-4" type="text" placeholder="other"/>
+                  <label for="input-4">
+                    <span class="label-text">Others</span>
+                    <span class="nav-dot"></span>
+                  </label>
+              <button type="submit" value="submit">Submit</button>
+              <div class="signup-button">Start</div>
+            </form>
+        </div>
+        <br><br>
+        <div class="footer">
+                <table align="center">
+                      <tr>
+                        <td width="400" height="30"><u><b>Contact Us</b></u></td>
+                        <td width="400" height="30"><u><b>About Us</b></u></td>
+                        <td width="400" height="30"><b>Share & Subscribe</b></td>
+                      </tr>
+                      <tr>
+                        <td width="400" height="10">+91 9876543210</td>
+                        <td width="400" height="10"><u>FAQ's</u></td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a></u></td>
+                      </tr>
+                      <tr>
+                        <td width="400" height="10">+91 9893634698</td>
+                        <td width="400" height="10">Developers & Designers</td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-google"></a><a href="#" class="fa fa-linkedin"></a></u></td>
+                      </tr>
+                </table>
+        </div>  
+        <script type="text/javascript" src="bquery.js"></script>   
+    </body>
+</html>

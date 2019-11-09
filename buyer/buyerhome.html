@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BUYER DASHBOARD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--required CDN's-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- footer icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="buyerhome.css" rel="stylesheet" type="text/css">
+    </head>
+    <body > 
+        <script src="buyerhome1.js"></script>
+        <script src="buyerhome2.js"></script>
+        <div class="heading">
+            <h1>FASAL</h1>
+        </div>      
+        <div id="navbar">
+                <a class="active" href="E:\WebTech Project\buyer\buyerhome.html">Home</a>
+                <a href="E:\WebTech Project\requestcrop\requestcrop.html">Request Crop</a>
+                <a href="E:\WebTech Project\Bquery\bquery.html">Query</a>
+                <a href="E:\WebTech Project\main home\mainhome.html">Sign Out</a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Profile Details</h2>
+            <div class="circle" ></div>
+                <ul>
+                   <li><b>Name:</b> Ram Mohan Rao</li>
+                    <li><b>Email:</b> hello@gmail.com</li>
+                    <li><b>Address:</b> Amritsar, Punjab</li>
+                    <li><b>Phone No:</b> 9987654324</li>
+                </ul>
+        </div>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;    
+            </span>
+            
+        </div>
+        <h1 class ="table-head "> Recieved Crop Details</h1>
+        <div class="cont">
+            <table class="table " id="reqtable">
+                <thead>
+                    <tr class="tr">
+                        <th>Farmer Name</th>
+                        <th>Crop</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Accept</th>   
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <input class="button" type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+        </div>
+        <br><br>
+        <div class="footer">
+                <table align="center">
+                      <tr>
+                        <td width="400" height="30"><u><b>Contact Us</b></u></td>
+                        <td width="400" height="30"><u><b>About Us</b></u></td>
+                        <td width="400" height="30"><b>Share & Subscribe</b></td>
+                      </tr>
+                      <tr>
+                        <td width="400" height="10">+91 9876543210</td>
+                        <td width="400" height="10"><u>FAQ's</u></td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a></u></td>
+                      </tr>
+                      <tr>
+                        <td width="400" height="10">+91 9893634698</td>
+                        <td width="400" height="10">Developers & Designers</td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-google"></a><a href="#" class="fa fa-linkedin"></a></u></td>
+                      </tr>
+                </table>
+        </div>     
+    </body>
+</html>
