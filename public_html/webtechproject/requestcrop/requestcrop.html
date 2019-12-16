@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REQUEST CROP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--required CDN's-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel='shortcut icon' href='..\..\..\favicon.png'>
+
+
+        <link href="requestcrop.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <script src="requestcrop.js"></script>
+    
+      <div class="heading">
+      <h1>BUYER</h1>
+    </div>
+        <div id="navbar">
+                <a href="..\buyer\buyerhome.php">Home</a>
+                <a class="active" href="..\requestcrop\requestcrop.html">Request Crop</a>
+                <a href="..\Bquery\bquery.php">Query</a>
+                <a href="../../../index.php">Sign Out</a>
+        </div>
+
+        <!-- ADD HTML CONTENT HERE-->
+        <h1 class="page-heading">Provide Your Request Details</h1>
+        
+        <div class="container border border-primary rounded">
+            
+            <form action="requestcrop.php" method='post'>
+                <div class="form-group row form-row">
+                    <label for="type-of-crop" class="form-control-label col-sm-3 text-center" >Choose Type of Crop :</label>
+                    <button type="button" class="btn btn-primary btn-lg " data-toggle="modal" data-target="#choose-crop-type" 
+                    id="type-of-crop">Choose</button>
+                    
+                    <input type="text" class="form-control col-sm-2 ml-5 input-group-lg" id="type-of-crop" name="croptype">
+                </div>
+                <div class="form-group row form-row">
+                    <label for="crop-name" class="form-control-label col-sm-3 text-center" >Crop Name :</label>
+                    
+                    <input type="text" class="form-control col-sm-4 " id="crop-name" name="cropname" autocomplete="off">
+                </div>
+                <div class="form-group row form-row">
+                    <label for="required-quantity" class="form-control-label col-sm-3 text-center" >Required Quantity :</label>
+                    
+                    <input type="number" class="form-control col-sm-4 " id="required-quantity" name="qty" placeholder="Kgs">
+                </div>
+                <div class="form-group row form-row">
+                    
+                    <label for="price" class="form-control-label col-sm-3 text-center" >Price :</label>
+                    <input type="number" class="form-control col-sm-4 " id="price" name="price" placeholder="Rs/Kg">
+                </div>
+                
+                <div class="form-group row form-row ">
+                    <input type="submit" name='submit' class="btn btn-primary btn-lg submit-btn" value="SUBMIT">
+                </div> 
+                
+            </form>
+        </div>
+
+        <div class="modal fade" id="choose-crop-type" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel">Select a Crop Type</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                    <div class="col-sm-4">
+                                      <div class="card" >
+                                        <img src="vegetables.png" class="card-img-top" alt="..." style=" height: 150px;">
+                                        <div class="card-body">
+                                          <h5 class="card-title text">Vegetable</h5>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          <button type="button" class="btn btn-primary"  data-crop-type="Vegetable" data-dismiss="modal">Select</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                      <div class="card" >
+                                          <img src="fruits.jpg" class="card-img-top" alt="..." style=" height: 150px;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Fruit</h5>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          <button type="button" class="btn btn-primary" data-crop-type="Fruit" data-dismiss="modal">Select</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card" >
+                                            <img src="pulses.jpg" class="card-img-top" alt="..." style=" height: 150px;">
+                                          <div class="card-body">
+                                            <h5 class="card-title text">Pulse</h5>
+                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                            <button type="button" class="btn btn-primary" data-crop-type="Pulse" data-dismiss="modal">Select</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                          <div class="card" >
+                                              <img src="cereals.jpg" class="card-img-top" alt="..." style=" height: 150px;">
+                                            <div class="card-body">
+                                              <h5 class="card-title text">Cereal</h5>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <button type="button" class="btn btn-primary" data-crop-type="Cereal" data-dismiss="modal">Select</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="card" >
+                                                <img src="millet.jpg" class="card-img-top" alt="..." style=" height: 150px;">
+                                              <div class="card-body">
+                                                <h5 class="card-title text">Millet</h5>
+                                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <button type="button" class="btn btn-primary" data-crop-type="Millet" data-dismiss="modal">Select</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <div class="card" >
+                                                  <img src="sugar.jpg" class="card-img-top" alt="..." style=" height: 150px;">
+                                                <div class="card-body">
+                                                  <h5 class="card-title text">Sugar</h5>
+                                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                  <button type="button" class="btn btn-primary"  data-crop-type="Sugar" data-dismiss="modal">Select</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                    <div class="col-sm-4">
+                                          <div class="card" >
+                                              <img src="fibre.jpg" class="card-img-top" alt="..." style=" height: 150px;">
+                                            <div class="card-body">
+                                              <h5 class="card-title text">Fibre</h5>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <button type="button" class="btn btn-primary"  data-crop-type="Fibre" data-dismiss="modal">Select</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    <div class="col-sm-4">
+                                          <div class="card " >
+                                              <img src="nuts.jpeg" class="card-img-top" alt="..." style=" height: 150px;">
+                                            <div class="card-body">
+                                              <h5 class="card-title text">Nuts</h5>
+                                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                              <button type="button" class="btn btn-primary"  data-crop-type="Nuts" data-dismiss="modal">Select</button>
+                                            </div>
+                                          </div>
+                                        </div>            
+                                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+              </div>
+          
+   
+        <div class="footer">
+                <table align="center">
+                      <tr>
+                        <td width="400" height="30"><u><b>Contact Us</b></u></td>
+                        <td width="400" height="30"><u><b>About Us</b></u></td>
+                        <td width="400" height="30"><b>Share & Subscribe</b></td>
+                      </tr>
+                      <tr>
+                        <td width="400" height="10">+91 9876543210</td>
+                        <td width="400" height="10"><u>FAQ's</u></td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-twitter"></a></u></td>
+                      </tr>
+                      <tr>
+                        <td width="400" height="10">+91 9893634698</td>
+                        <td width="400" height="10">Developers & Designers</td>
+                        <td width="400" height="40"><u><a href="#" class="fa fa-google"></a><a href="#" class="fa fa-linkedin"></a></u></td>
+                      </tr>
+                </table>
+        </div>    
+    </body>   
+</html>
